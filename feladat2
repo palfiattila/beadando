@@ -1,0 +1,10 @@
+x = 20
+szorzat = 1
+szita = list(range(2, x+1))
+for i in range(len(szita)):
+	prim = szita[i]
+	szorzat *= prim
+	for j in range(i+1, len(szita)):
+		if (szita[j] % prim == 0):
+			szita[j] //= prim
+print("Eredmeny:", szorzat)
